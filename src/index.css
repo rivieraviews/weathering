@@ -23,7 +23,7 @@
     #96e6a1
   );
   background-size: 400% 400%;
-  animation: gradient-shift ease infinite;
+  animation: gradient-shift 12s ease infinite;
 }
 
 .bg-cold-gradient {
