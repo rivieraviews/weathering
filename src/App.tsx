@@ -64,11 +64,10 @@ export default function App() {
     if (!weather) return "animate-gradient-multi";
 
     const temp = weather.current.temp_c;
-    const vibe = weather.current.condition.text.toLowerCase();
 
     if (temp < 5) return "bg-cold-gradient";
-    if (temp < 20 && vibe.includes("cloud")) return "bg-mild-gradient";
-    if (temp >= 20 && vibe.includes("sun")) return "bg-hot-gradient";
+    else if (temp < 20) return "bg-mild-gradient";
+    else if (temp >= 20) return "bg-hot-gradient";
 
     //fallback
     return "animate-gradient-multi";
